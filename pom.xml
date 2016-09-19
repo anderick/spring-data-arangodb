@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.springframework.data</groupId>
+	<artifactId>spring-data-arangodb</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- <parent> <groupId>org.springframework.data.build</groupId> <artifactId>spring-data-parent</artifactId> 
+		<version>1.9.0.BUILD-SNAPSHOT</version> </parent> -->
+	<name>Spring Data ArangoDB</name>
+	<url>https://github.com/anderick/spring-data-arangodb</url>
+	<description>Provide support to use ArangoDB among the Spring Data concepts.</description>
+
+	<properties>
+		<dist.key>ARANGODB</dist.key>
+
+		<springdata.commons>1.4.1.RELEASE</springdata.commons>
+	</properties>
+
+	<developers>
+		<developer>
+			<id>anderick</id>
+			<name>Alberto Anderick Jr.</name>
+			<email>beto at anderick.com</email>
+			<organization>Anderick Software</organization>
+			<organizationUrl>http://anderick.com</organizationUrl>
+			<roles>
+				<role>Project Leader</role>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<!-- <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-commons</artifactId> 
+			<version>${springdata.commons}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-context</artifactId> </dependency> <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-tx</artifactId> </dependency> <dependency> <groupId>org.springframework</groupId> 
+			<artifactId>spring-test</artifactId> <scope>test</scope> </dependency> -->
+		
+		<dependency>
+			<groupId>com.arangodb</groupId>
+			<artifactId>arangodb-java-driver</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>
