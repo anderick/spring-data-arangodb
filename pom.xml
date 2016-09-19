@@ -6,8 +6,12 @@
 	<artifactId>spring-data-arangodb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<!-- <parent> <groupId>org.springframework.data.build</groupId> <artifactId>spring-data-parent</artifactId> 
-		<version>1.9.0.BUILD-SNAPSHOT</version> </parent> -->
+	<parent>
+		<groupId>org.springframework.data.build</groupId>
+		<artifactId>spring-data-parent</artifactId>
+		<version>1.8.2.RELEASE</version>
+	</parent>
+
 	<name>Spring Data ArangoDB</name>
 	<url>https://github.com/anderick/spring-data-arangodb</url>
 	<description>Provide support to use ArangoDB among the Spring Data concepts.</description>
@@ -34,18 +38,51 @@
 	</developers>
 
 	<dependencies>
-		<!-- <dependency> <groupId>org.springframework.data</groupId> <artifactId>spring-data-commons</artifactId> 
-			<version>${springdata.commons}</version> </dependency> <dependency> <groupId>org.springframework</groupId> 
-			<artifactId>spring-context</artifactId> </dependency> <dependency> <groupId>org.springframework</groupId> 
-			<artifactId>spring-tx</artifactId> </dependency> <dependency> <groupId>org.springframework</groupId> 
-			<artifactId>spring-test</artifactId> <scope>test</scope> </dependency> -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
 		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>com.arangodb</groupId>
 			<artifactId>arangodb-java-driver</artifactId>
 			<version>3.0.0</version>
 		</dependency>
-		
+
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>wagon-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.asciidoctor</groupId>
+				<artifactId>asciidoctor-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-plugins-release</id>
+			<url>https://repo.spring.io/plugins-release</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
