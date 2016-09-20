@@ -26,6 +26,7 @@
 
 	<properties>
 		<dist.key>ARANGODB</dist.key>
+		<bundlor.enabled>false</bundlor.enabled>
 
 		<springdata.commons>1.12.2.RELEASE</springdata.commons>
 	</properties>
