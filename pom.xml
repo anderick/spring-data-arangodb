@@ -16,10 +16,18 @@
 	<url>https://github.com/anderick/spring-data-arangodb</url>
 	<description>Provide support to use ArangoDB among the Spring Data concepts.</description>
 
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
 	<properties>
 		<dist.key>ARANGODB</dist.key>
 
-		<springdata.commons>1.4.1.RELEASE</springdata.commons>
+		<springdata.commons>1.12.2.RELEASE</springdata.commons>
 	</properties>
 
 	<developers>
@@ -39,6 +47,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+			<version>${springdata.commons}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
@@ -46,7 +60,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
