@@ -1,4 +1,5 @@
-![TraviCI status](https://api.travis-ci.org/anderick/spring-data-arangodb.svg)
+[![TraviCI](https://api.travis-ci.org/anderick/spring-data-arangodb.svg)](https://travis-ci.org/anderick/spring-data-arangodb)
+[![codecov](https://codecov.io/gh/anderick/spring-data-arangodb/branch/master/graph/badge.svg)](https://codecov.io/gh/anderick/spring-data-arangodb)
 
 ![ArangoDB-Logo](https://www.arangodb.com/wp-content/uploads/2012/10/logo_arangodb_transp.png)
 
