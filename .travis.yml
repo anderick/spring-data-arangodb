@@ -4,10 +4,21 @@ before_script:
   - chmod 777 ./tests/travis/setup_arangodb.sh
   - ./tests/travis/setup_arangodb.sh
 
-install: mvn install -Dgpg.skip=true -Dmaven.javadoc.skip=true -B -V
+install: true
 
 jdk:
   - oraclejdk7
   - oraclejdk8
 
 sudo: false
+
+cache:
+  directories:
+    - $HOME/.m2
+
+install: true
+
+script: "mvn clean dependency:list test -Dsort"
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
