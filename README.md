@@ -1,3 +1,6 @@
+# This project is not under development, check https://github.com/arangodb/spring-data instead.
+
+
 [![TraviCI](https://api.travis-ci.org/anderick/spring-data-arangodb.svg)](https://travis-ci.org/anderick/spring-data-arangodb)
 [![codecov](https://codecov.io/gh/anderick/spring-data-arangodb/branch/master/graph/badge.svg)](https://codecov.io/gh/anderick/spring-data-arangodb)
 
