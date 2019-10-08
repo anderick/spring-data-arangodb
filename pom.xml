@@ -28,7 +28,7 @@
 		<dist.key>ARANGODB</dist.key>
 		<bundlor.enabled>false</bundlor.enabled>
 
-		<springdata.commons>1.12.2.RELEASE</springdata.commons>
+		<springdata.commons>1.4.1.RELEASE</springdata.commons>
 	</properties>
 
 	<developers>
@@ -36,7 +36,6 @@
 			<id>anderick</id>
 			<name>Alberto Anderick Jr.</name>
 			<email>beto at anderick.com</email>
-			<organization>Anderick Software</organization>
 			<organizationUrl>http://anderick.com</organizationUrl>
 			<roles>
 				<role>Project Leader</role>
